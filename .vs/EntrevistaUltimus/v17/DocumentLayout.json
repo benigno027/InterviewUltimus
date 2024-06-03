@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\mak\\source\\repos\\EntrevistaUltimus\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DF1BDACA-63DE-4A6C-BFF7-E5D1C80E152A}|EntrevistaUltimus\\EntrevistaUltimus.csproj|c:\\users\\mak\\source\\repos\\entrevistaultimus\\entrevistaultimus\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF1BDACA-63DE-4A6C-BFF7-E5D1C80E152A}|EntrevistaUltimus\\EntrevistaUltimus.csproj|solutionrelative:entrevistaultimus\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DF1BDACA-63DE-4A6C-BFF7-E5D1C80E152A}|EntrevistaUltimus\\EntrevistaUltimus.csproj|c:\\users\\mak\\source\\repos\\entrevistaultimus\\entrevistaultimus\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DF1BDACA-63DE-4A6C-BFF7-E5D1C80E152A}|EntrevistaUltimus\\EntrevistaUltimus.csproj|solutionrelative:entrevistaultimus\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,10 +27,6 @@
       "RelativeMoniker": "D:0:0:{DF1BDACA-63DE-4A6C-BFF7-E5D1C80E152A}|EntrevistaUltimus\\EntrevistaUltimus.csproj|solutionrelative:entrevistaultimus\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF1BDACA-63DE-4A6C-BFF7-E5D1C80E152A}|EntrevistaUltimus\\EntrevistaUltimus.csproj|c:\\users\\mak\\source\\repos\\entrevistaultimus\\entrevistaultimus\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF1BDACA-63DE-4A6C-BFF7-E5D1C80E152A}|EntrevistaUltimus\\EntrevistaUltimus.csproj|solutionrelative:entrevistaultimus\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF1BDACA-63DE-4A6C-BFF7-E5D1C80E152A}|EntrevistaUltimus\\EntrevistaUltimus.csproj|c:\\users\\mak\\source\\repos\\entrevistaultimus\\entrevistaultimus\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF1BDACA-63DE-4A6C-BFF7-E5D1C80E152A}|EntrevistaUltimus\\EntrevistaUltimus.csproj|solutionrelative:entrevistaultimus\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mak\\source\\repos\\EntrevistaUltimus\\EntrevistaUltimus\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "EntrevistaUltimus\\Views\\Home\\Index.cshtml",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mak\\source\\repos\\EntrevistaUltimus\\EntrevistaUltimus\\Views\\User\\Index.cshtml",
               "RelativeDocumentMoniker": "EntrevistaUltimus\\Views\\User\\Index.cshtml",
@@ -79,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserViewModel.cs",
               "DocumentMoniker": "C:\\Users\\mak\\source\\repos\\EntrevistaUltimus\\EntrevistaUltimus\\ViewModels\\UserViewModel.cs",
               "RelativeDocumentMoniker": "EntrevistaUltimus\\ViewModels\\UserViewModel.cs",
@@ -91,19 +91,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\mak\\source\\repos\\EntrevistaUltimus\\EntrevistaUltimus\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "EntrevistaUltimus\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\mak\\source\\repos\\EntrevistaUltimus\\EntrevistaUltimus\\Controllers\\UserController.cs",
               "RelativeToolTip": "EntrevistaUltimus\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAIwEkAAAAwAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwC4AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T05:19:48.657Z"
+              "WhenOpened": "2024-06-03T05:19:48.657Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\mak\\source\\repos\\EntrevistaUltimus\\EntrevistaUltimus\\Views\\User\\Create.cshtml",
               "RelativeDocumentMoniker": "EntrevistaUltimus\\Views\\User\\Create.cshtml",
@@ -115,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\mak\\source\\repos\\EntrevistaUltimus\\EntrevistaUltimus\\Views\\User\\Edit.cshtml",
               "RelativeDocumentMoniker": "EntrevistaUltimus\\Views\\User\\Edit.cshtml",

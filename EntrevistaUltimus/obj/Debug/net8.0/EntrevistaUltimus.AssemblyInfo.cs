@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EntrevistaUltimus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2f602e53cdeff80c7e5a6dbec8b6b5d8cda1ee9")]
 [assembly: System.Reflection.AssemblyProductAttribute("EntrevistaUltimus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EntrevistaUltimus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

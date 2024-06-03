@@ -39,3 +39,4 @@ C:\Users\mak\source\repos\EntrevistaUltimus\EntrevistaUltimus\obj\Debug\net8.0\r
 C:\Users\mak\source\repos\EntrevistaUltimus\EntrevistaUltimus\obj\Debug\net8.0\EntrevistaUltimus.pdb
 C:\Users\mak\source\repos\EntrevistaUltimus\EntrevistaUltimus\obj\Debug\net8.0\EntrevistaUltimus.genruntimeconfig.cache
 C:\Users\mak\source\repos\EntrevistaUltimus\EntrevistaUltimus\obj\Debug\net8.0\ref\EntrevistaUltimus.dll
+C:\Users\mak\source\repos\EntrevistaUltimus\EntrevistaUltimus\obj\Debug\net8.0\EntrevistaUltimus.sourcelink.json

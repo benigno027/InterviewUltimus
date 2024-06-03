@@ -44,7 +44,7 @@ namespace EntrevistaUltimus.Controllers
         public ActionResult Index(int? page)
         {
 
-            int pageSize = 3;
+            int pageSize = 5;
             int pageNumber = (page ?? 1);
 
             var users = _db.Users.ToPagedList(pageNumber, pageSize);
