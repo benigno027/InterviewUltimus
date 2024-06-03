@@ -14,22 +14,22 @@ Este proyecto fue desarrollado como una prueba técnica para una entrevista. Se 
 ### Listado de Usuarios
 Aquí puedes ver cómo se presenta el listado de usuarios registrados en el sistema.
 
-![Listado de Usuarios](wwwroot/capturas-de-pantalla/listado-de-usuarios.png)
+![Listado de Usuarios](EntrevistaUltimus/wwwroot/capturas-de-pantalla/listado-de-usuarios.png)
 
 ### Creación de Usuario
 Pantalla para agregar un nuevo usuario.
 
-![Creación de Usuario](wwwroot/capturas-de-pantalla/crear-usuario.png)
+![Creación de Usuario](EntrevistaUltimus/wwwroot/capturas-de-pantalla/crear-usuario.png)
 
 ### Edición de Usuario
 Pantalla para editar la información de un usuario existente.
 
-![Edición de Usuario](wwwroot/capturas-de-pantalla/editar-usuario.png)
+![Edición de Usuario](EntrevistaUltimus/wwwroot/capturas-de-pantalla/editar-usuario.png)
 
 ### Eliminación de Usuario
 Confirmación para eliminar un usuario del sistema.
 
-![Eliminación de Usuario](wwwroot/capturas-de-pantalla/eliminar-usuario.png)
+![Eliminación de Usuario](EntrevistaUltimus/wwwroot/capturas-de-pantalla/eliminar-usuario.png)
 
 ## Base de Datos
 
