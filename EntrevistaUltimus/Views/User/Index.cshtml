@@ -1,0 +1,97 @@
+﻿@model EntrevistaUltimus.ViewModels.UsersViewModel
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    var nationalities = ViewBag.Nationalities as List<SelectListItem>;
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="@Url.Action("Create", "User")" class="btn btn-primary">Create User</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div id="userList">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Celular</th>
+                        <th>Correo</th>
+                        <th>Nacionalidad</th>
+                        <th>Dirección</th>
+                        <th>Sexo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in Model.Users)
+                    {
+                        <tr>
+                            <td>@user.FirstName @user.LastName</td>
+                            <td>@user.BirthDate.ToString("dd/MM/yyyy")</td>
+                            <td>@user.Telephone</td>
+                            <td>@user.Email</td>
+                            <td>@nationalities.FirstOrDefault(n => n.Value == user.NationalityId.ToString())?.Text</td>
+                            <td>@user.Residency</td>
+                            <td>@(user.Gender == 1 ? "Hombre" : "Mujer")</td>
+                            <td>
+                                <a href="@Url.Action("Edit", "User", new { id = user.Id })" class="btn btn-warning">Editar</a>
+                                <button class="btn btn-danger" onclick="openDeleteModal('@user.Id')">Eliminar</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="d-flex justify-content-center">
+                <ul class="pagination">
+                    @if (Model.Users.HasPreviousPage)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" href="@Url.Action("Index", new { page = Model.Users.PageNumber - 1 })">Anterior</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item disabled">
+                            <span class="page-link">Anterior</span>
+                        </li>
+                    }
+
+                    @for (int i = 1; i <= Model.Users.PageCount; i++)
+                    {
+                        <li class="page-item @(Model.Users.PageNumber == i ? "active" : "")">
+                            <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                        </li>
+                    }
+
+                    @if (Model.Users.HasNextPage)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" href="@Url.Action("Index", new { page = Model.Users.PageNumber + 1 })">Siguiente</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item disabled">
+                            <span class="page-link">Siguiente</span>
+                        </li>
+                    }
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+@Html.Partial("_Delete")

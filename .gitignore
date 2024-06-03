@@ -1,0 +1,85 @@
+# Configuración de archivos y directorios que no deberían ser rastreados por Git.
+
+## Sistema operativo
+# Archivos de sistema específicos de Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Archivos de sistema específicos de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Archivos de sistema específicos de Linux
+*~
+
+## Archivos de entorno
+.env
+
+## Archivos de compilación
+bin/
+obj/
+**/bin/
+**/obj/
+
+## Archivos de usuario
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.ide
+*.rsuser
+
+## Archivos de dependencia
+packages/
+*.nupkg
+*.nuspec
+
+## Archivos de configuración y paquetes de Visual Studio
+.vscode/
+.vs/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+
+## Archivos de dependencia de NuGet
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Archivos de configuración de npm
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnp/
+.pnp.js
+
+## Archivos generados por dotnet
+*.pidb
+*.rsuser
+*.dotnet-serve/
+
+## Archivos generados por Rider
+.idea/
+*.sln.iml
+
+## Otros
+*.log
+*.tlog
+*.ide.*
+*.csproj.user
+.DS_Store

@@ -1,0 +1,126 @@
+﻿@model EntrevistaUltimus.ViewModels.UserViewModel
+
+<h2>Editar usuario</h2>
+<h6 class="card-subtitle mb-2 text-muted">Complete todos los campos</h6>
+
+<div id="userForm">
+    @using (Html.BeginForm("Edit", "User", FormMethod.Post, new { id = "userForm" }))
+    {
+        @Html.HiddenFor(m => m.Id)
+
+        <div class="row mt-2">
+            
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.FirstName, "Nombre")
+                    @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.FirstName, null, new { @class = "text-danger" })
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.LastName, "Apellido")
+                    @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.LastName, null, new { @class = "text-danger" })
+                </div>
+
+            </div>
+			
+        </div>
+
+        <div class="row mt-2">
+
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.BirthDate, "Fecha de nacimiento")
+                    @Html.TextBoxFor(m => m.BirthDate, new { @class = "form-control", type = "datepicker" })
+                    @Html.ValidationMessageFor(m => m.BirthDate, null, new { @class = "text-danger" })
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Telephone, "Celular")
+                    @Html.TextBoxFor(m => m.Telephone, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Telephone, null, new { @class = "text-danger" })
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row mt-2">
+
+            <div class="col-md-12">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Email, "Correo")
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Email, null, new { @class = "text-danger" })
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row mt-2">
+
+            <div class="col-md-12">
+
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Residency, "Dirección")
+                    @Html.TextBoxFor(m => m.Residency, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Residency, null, new { @class = "text-danger" })
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row mt-2">
+
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.NationalityId, "Nacionalidad")
+                    @Html.DropDownListFor(m => m.NationalityId, (IEnumerable<SelectListItem>)ViewBag.Nationalities, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.NationalityId, null, new { @class = "text-danger" })
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Gender, "Sexo")
+                    @Html.DropDownListFor(m => m.Gender, (IEnumerable<SelectListItem>)ViewBag.Generos, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Gender, null, new { @class = "text-danger" })
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="row mt-4">
+
+            <div class="col-md-12">
+                <div class="form-group">
+
+                    <button type="submit" id="btnSave" class="btn btn-primary">Guardar</button>
+
+                    <a href="@Url.Action("Index", "User")" class="btn btn-dark">Volver</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    }
+</div>
